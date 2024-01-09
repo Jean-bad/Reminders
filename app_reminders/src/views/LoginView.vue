@@ -14,7 +14,7 @@
                 <button type="submit" class="content__btn">Iniciar sesion</button>
             </div>
             <div class="content__container">
-                <a href="#">Registrate aqui!!</a>
+                <router-link to="/create-account">Registrate aqui!!</router-link>
                 <a href="#">¿Olvidaste tu contraseña?</a>
             </div>
         </form>
