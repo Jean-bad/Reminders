@@ -2,7 +2,10 @@
     <div class="content">
         <div class="content__nav">
             <h1>Bienvenido, {{ nameUser }}</h1>
-            <button @click="logout" type="button">Cerrar sesion</button>
+            <div>
+                <router-link to="/profile" style="margin-right: 12px; font-weight: 500; color: #4d41fa;">Mi perfil</router-link>
+                <button @click="logout" type="button">Cerrar sesion</button>
+            </div>
         </div>
         <div class="content__create">
             <button @click="openModal">➕ Crear recordatorio</button>

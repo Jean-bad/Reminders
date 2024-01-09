@@ -10,16 +10,9 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/create',
-      name: 'create',
-      component: () => import('../views/Createview.vue'),
-      meta: {requiresAuth: true}
-    },
-    {
-      path: '/edit/:id',
-      name: 'edit',
-      component: () => import('../views/Editview.vue'),
-      meta: {requiresAuth: true}
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/LoginView.vue')
     },
     {
       path: '/create-account',
@@ -27,9 +20,10 @@ const router = createRouter({
       component: () => import('../views/CreateUserView.vue')
     },
     {
-      path: '/login',
-      name: 'login',
-      component: () => import('../views/LoginView.vue')
+      path: '/profile',
+      name: 'profile',
+      component: () => import('../views/AboutView.vue'),
+      meta: {requiresAuth: true}
     },
     {
       path: '/reminders',
